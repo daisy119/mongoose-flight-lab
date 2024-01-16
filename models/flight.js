@@ -34,7 +34,7 @@ const flightSchema = new Schema({
 })
 
 // Compile the schema into a model and export it. Model is capitalized
-const Flight = mongoose.model('FLight', flightSchema)
+const Flight = mongoose.model('Flight', flightSchema)
 
 export {
   Flight
