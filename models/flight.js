@@ -8,6 +8,8 @@ const flightSchema = new Schema({
   airport: String,
   flightNo: Number,
   departs: Date,
+},{
+  timestamps: true
 })
 
 // Compile the schema into a model and export it. Model is capitalized
