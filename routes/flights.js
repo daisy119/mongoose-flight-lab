@@ -10,6 +10,8 @@ router.get('/',flightsCtrl.index)
 router.get('/new',flightsCtrl.new)
 // GET localhost:3000/flights/:flightsId 
 router.get('/:flightId',flightsCtrl.show)
+// GET localhost:3000/flights/:flightsId/edit
+router.get('/:flightId/edit',flightsCtrl.edit)
 // GET localhost:3000/flights
 router.post('/',flightsCtrl.create)
 // DELETE localhost:3000/flights/:flightId
