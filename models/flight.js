@@ -36,6 +36,8 @@ const flightSchema = new Schema({
     },
     
   },
+  //array for ticketSchema
+  tickets: [ticketSchema]
 },{
   timestamps: true
 })
