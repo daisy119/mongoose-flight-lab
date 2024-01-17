@@ -2,7 +2,7 @@ import { Meal } from '../models/meal.js'
 
 function newMeal(req, res) {
   // res.send('sleepy')
-  Meal.find({})
+  Meal.find({}).sort('-name')
   .then(meals =>{
     res.render('meals/new', {
       meals: meals,
